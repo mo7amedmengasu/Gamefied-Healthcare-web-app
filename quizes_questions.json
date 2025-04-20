@@ -1,0 +1,1922 @@
+{
+    "preventive_health": [
+        {
+            "text": "What is the primary purpose of preventive healthcare?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Treating existing chronic conditions"
+                },
+                {
+                    "value": "b",
+                    "label": "Catching health issues early before symptoms appear"
+                },
+                {
+                    "value": "c",
+                    "label": "Replacing emergency medical care"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Catching health issues early before symptoms appear"
+        },
+        {
+            "text": "Why are regular check-ups important even when feeling healthy?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To get prescription medications"
+                },
+                {
+                    "value": "b",
+                    "label": "To compare health stats with others"
+                },
+                {
+                    "value": "c",
+                    "label": "To assess risk factors and catch early signs"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "To assess risk factors and catch early signs"
+        },
+        {
+            "text": "Which screening can help prevent colorectal cancer?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Colonoscopy"
+                },
+                {
+                    "value": "b",
+                    "label": "Mammogram"
+                },
+                {
+                    "value": "c",
+                    "label": "Blood glucose test"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Colonoscopy"
+        },
+        {
+            "text": "Why do adults need vaccine updates?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Childhood vaccines never work"
+                },
+                {
+                    "value": "b",
+                    "label": "To replace previous vaccines"
+                },
+                {
+                    "value": "c",
+                    "label": "Immunity weakens over time"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Immunity weakens over time"
+        },
+        {
+            "text": "Which daily habit helps long-term health?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Crash dieting"
+                },
+                {
+                    "value": "b",
+                    "label": "Regular physical activity"
+                },
+                {
+                    "value": "c",
+                    "label": "Skipping breakfast"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Regular physical activity"
+        },
+        {
+            "text": "What becomes a priority in your 40s?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Bone density scans"
+                },
+                {
+                    "value": "b",
+                    "label": "Childhood vaccines"
+                },
+                {
+                    "value": "c",
+                    "label": "Cancer screenings"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Cancer screenings"
+        },
+        {
+            "text": "What does the Affordable Care Act require?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Coverage for preventive services"
+                },
+                {
+                    "value": "b",
+                    "label": "Free emergency care"
+                },
+                {
+                    "value": "c",
+                    "label": "Mandatory annual check-ups"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Coverage for preventive services"
+        },
+        {
+            "text": "What helps maintain healthy weight?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Eating processed foods"
+                },
+                {
+                    "value": "b",
+                    "label": "Skipping meals"
+                },
+                {
+                    "value": "c",
+                    "label": "Eating vegetables and whole grains"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Eating vegetables and whole grains"
+        },
+        {
+            "text": "How often should tetanus boosters be given?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Every year"
+                },
+                {
+                    "value": "b",
+                    "label": "Every 10 years"
+                },
+                {
+                    "value": "c",
+                    "label": "Only once"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Every 10 years"
+        },
+        {
+            "text": "Why is prevention cost-effective?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Doctors charge less for check-ups"
+                },
+                {
+                    "value": "b",
+                    "label": "Preventive care is optional"
+                },
+                {
+                    "value": "c",
+                    "label": "Treating advanced illness is more expensive"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Treating advanced illness is more expensive"
+        }
+    ],
+    "nutrition_basics": [
+        {
+            "text": "What is a key function of proteins in the body?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Providing quick energy bursts"
+                },
+                {
+                    "value": "b",
+                    "label": "Building muscle fibers and antibodies"
+                },
+                {
+                    "value": "c",
+                    "label": "Storing vitamins in fat cells"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Building muscle fibers and antibodies"
+        },
+        {
+            "text": "Why are complex carbohydrates like whole grains preferred over simple sugars?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They are cheaper"
+                },
+                {
+                    "value": "b",
+                    "label": "They provide sustained energy"
+                },
+                {
+                    "value": "c",
+                    "label": "They taste better"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "They provide sustained energy"
+        },
+        {
+            "text": "What role do unsaturated fats like olive oil and avocados play in health?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They increase inflammation"
+                },
+                {
+                    "value": "b",
+                    "label": "They support cardiovascular health"
+                },
+                {
+                    "value": "c",
+                    "label": "They provide empty calories"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "They support cardiovascular health"
+        },
+        {
+            "text": "Why is iron considered an essential micronutrient?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It helps in hydration"
+                },
+                {
+                    "value": "b",
+                    "label": "It transports oxygen in the blood"
+                },
+                {
+                    "value": "c",
+                    "label": "It regulates body temperature"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It transports oxygen in the blood"
+        },
+        {
+            "text": "What is a common source of vitamin D that complements sun exposure?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Fatty fish and egg yolks"
+                },
+                {
+                    "value": "b",
+                    "label": "Whole grains and beans"
+                },
+                {
+                    "value": "c",
+                    "label": "Broccoli and apples"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Fatty fish and egg yolks"
+        },
+        {
+            "text": "Which dietary habit supports a healthy gut microbiome?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Avoiding all fats"
+                },
+                {
+                    "value": "b",
+                    "label": "Consuming prebiotic fibers and fermented foods"
+                },
+                {
+                    "value": "c",
+                    "label": "Eating only animal protein"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Consuming prebiotic fibers and fermented foods"
+        },
+        {
+            "text": "Why is water essential beyond just hydration?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It gives the body color"
+                },
+                {
+                    "value": "b",
+                    "label": "It acts as a medium for biochemical reactions"
+                },
+                {
+                    "value": "c",
+                    "label": "It replaces the need for food"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It acts as a medium for biochemical reactions"
+        },
+        {
+            "text": "What is a sign of good hydration?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Clear urine and mental clarity"
+                },
+                {
+                    "value": "b",
+                    "label": "Heavy sweating"
+                },
+                {
+                    "value": "c",
+                    "label": "High blood pressure"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Clear urine and mental clarity"
+        },
+        {
+            "text": "What does a food ingredient list reveal?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "The calorie content"
+                },
+                {
+                    "value": "b",
+                    "label": "The order of nutrients by size"
+                },
+                {
+                    "value": "c",
+                    "label": "Ingredients listed by weight in descending order"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Ingredients listed by weight in descending order"
+        },
+        {
+            "text": "What nutritional need increases during later adulthood?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Simple carbohydrates"
+                },
+                {
+                    "value": "b",
+                    "label": "B vitamins and protein"
+                },
+                {
+                    "value": "c",
+                    "label": "Sugary snacks"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "B vitamins and protein"
+        }
+    ],
+    "mental_health_basics": [
+        {
+            "text": "What does mental health primarily influence in our lives?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Only our physical strength"
+                },
+                {
+                    "value": "b",
+                    "label": "How we think, feel, and act in daily life"
+                },
+                {
+                    "value": "c",
+                    "label": "Our ability to digest food"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "How we think, feel, and act in daily life"
+        },
+        {
+            "text": "Which of the following is a characteristic of positive mental wellness?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Absence of physical illness"
+                },
+                {
+                    "value": "b",
+                    "label": "Emotional resilience and ability to manage challenges"
+                },
+                {
+                    "value": "c",
+                    "label": "Avoiding all social interactions"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Emotional resilience and ability to manage challenges"
+        },
+        {
+            "text": "Which of the following is a common sign of mental health challenges?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Sudden increase in height"
+                },
+                {
+                    "value": "b",
+                    "label": "Persistent sadness or difficulty concentrating"
+                },
+                {
+                    "value": "c",
+                    "label": "Unusual appetite for sugary snacks"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Persistent sadness or difficulty concentrating"
+        },
+        {
+            "text": "What can help build emotional resilience?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Isolating oneself from others"
+                },
+                {
+                    "value": "b",
+                    "label": "Practicing mindfulness and setting realistic goals"
+                },
+                {
+                    "value": "c",
+                    "label": "Ignoring negative thoughts"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Practicing mindfulness and setting realistic goals"
+        },
+        {
+            "text": "Which approach is part of Cognitive Behavioral Therapy (CBT)?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Suppressing emotions entirely"
+                },
+                {
+                    "value": "b",
+                    "label": "Reframing negative thought patterns"
+                },
+                {
+                    "value": "c",
+                    "label": "Taking vitamin supplements daily"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Reframing negative thought patterns"
+        },
+        {
+            "text": "Why is physical activity recommended for mental health?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It makes you sweat toxins"
+                },
+                {
+                    "value": "b",
+                    "label": "It releases endorphins that boost mood"
+                },
+                {
+                    "value": "c",
+                    "label": "It helps with weight gain"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It releases endorphins that boost mood"
+        },
+        {
+            "text": "What is one benefit of teletherapy in mental health care?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It removes the need for therapy entirely"
+                },
+                {
+                    "value": "b",
+                    "label": "It makes mental health support more accessible"
+                },
+                {
+                    "value": "c",
+                    "label": "It is only for emergencies"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It makes mental health support more accessible"
+        },
+        {
+            "text": "Which professional can provide therapy and prescribe medication?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Psychiatrist"
+                },
+                {
+                    "value": "b",
+                    "label": "Life coach"
+                },
+                {
+                    "value": "c",
+                    "label": "Yoga instructor"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Psychiatrist"
+        },
+        {
+            "text": "What is a key element of effective self-care?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Occasional spa visits"
+                },
+                {
+                    "value": "b",
+                    "label": "Establishing consistent routines for sleep, nutrition, and activity"
+                },
+                {
+                    "value": "c",
+                    "label": "Eating desserts daily"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Establishing consistent routines for sleep, nutrition, and activity"
+        },
+        {
+            "text": "Why is self-care considered a personal practice?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It must be expensive and luxurious"
+                },
+                {
+                    "value": "b",
+                    "label": "Because what works for one person may not work for another"
+                },
+                {
+                    "value": "c",
+                    "label": "Only medical professionals can decide on it"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Because what works for one person may not work for another"
+        }
+    ],
+    "chronic_conditions_basics": [
+        {
+            "text": "What is a key characteristic of chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They resolve quickly without medical care"
+                },
+                {
+                    "value": "b",
+                    "label": "They are short-term and caused by infections"
+                },
+                {
+                    "value": "c",
+                    "label": "They last a year or more and require ongoing care"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "They last a year or more and require ongoing care"
+        },
+        {
+            "text": "Which of the following is part of daily management strategies for chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Ignoring symptoms until they worsen"
+                },
+                {
+                    "value": "b",
+                    "label": "Tracking symptoms and using mobile apps"
+                },
+                {
+                    "value": "c",
+                    "label": "Avoiding physical activity completely"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Tracking symptoms and using mobile apps"
+        },
+        {
+            "text": "Why is medication management important for chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It helps avoid all lifestyle changes"
+                },
+                {
+                    "value": "b",
+                    "label": "It allows patients to skip doctor visits"
+                },
+                {
+                    "value": "c",
+                    "label": "It ensures treatments stay effective and safe"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "It ensures treatments stay effective and safe"
+        },
+        {
+            "text": "What dietary practice helps manage hypertension?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "High-sugar diets"
+                },
+                {
+                    "value": "b",
+                    "label": "Low-sodium diets"
+                },
+                {
+                    "value": "c",
+                    "label": "Skipping meals"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Low-sodium diets"
+        },
+        {
+            "text": "Which exercise is recommended for people managing chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Heavy weightlifting"
+                },
+                {
+                    "value": "b",
+                    "label": "Low-impact exercises like swimming or yoga"
+                },
+                {
+                    "value": "c",
+                    "label": "No exercise at all"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Low-impact exercises like swimming or yoga"
+        },
+        {
+            "text": "What role do healthcare teams play in chronic condition management?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They make all decisions without patient input"
+                },
+                {
+                    "value": "b",
+                    "label": "They help patients collaborate and adjust treatments"
+                },
+                {
+                    "value": "c",
+                    "label": "They only prescribe medications"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "They help patients collaborate and adjust treatments"
+        },
+        {
+            "text": "How can telemedicine benefit patients with chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It replaces the need for medication"
+                },
+                {
+                    "value": "b",
+                    "label": "It improves access to specialist consultations"
+                },
+                {
+                    "value": "c",
+                    "label": "It only works in emergency cases"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It improves access to specialist consultations"
+        },
+        {
+            "text": "What can help prevent flare-ups in chronic conditions?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Stress reduction techniques"
+                },
+                {
+                    "value": "b",
+                    "label": "Ignoring symptoms"
+                },
+                {
+                    "value": "c",
+                    "label": "Skipping meals to lose weight"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Stress reduction techniques"
+        },
+        {
+            "text": "Why is symptom tracking important for people with chronic illnesses?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It helps prevent early diagnosis"
+                },
+                {
+                    "value": "b",
+                    "label": "It identifies patterns and prevents complications"
+                },
+                {
+                    "value": "c",
+                    "label": "It replaces regular doctor visits"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It identifies patterns and prevents complications"
+        },
+        {
+            "text": "What is the goal of chronic condition management?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To completely cure the condition"
+                },
+                {
+                    "value": "b",
+                    "label": "To manage symptoms and maintain quality of life"
+                },
+                {
+                    "value": "c",
+                    "label": "To avoid any form of treatment"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "To manage symptoms and maintain quality of life"
+        }
+    ],
+    "first_aid_essentials": [
+        {
+            "text": "What is the first priority when providing first aid?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Start CPR immediately"
+                },
+                {
+                    "value": "b",
+                    "label": "Look for medical supplies"
+                },
+                {
+                    "value": "c",
+                    "label": "Ensure personal safety and call emergency services"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Ensure personal safety and call emergency services"
+        },
+        {
+            "text": "How should CPR be administered to adults?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Use two fingers and press gently on the chest"
+                },
+                {
+                    "value": "b",
+                    "label": "Place hands on the breastbone and give 100-120 compressions per minute"
+                },
+                {
+                    "value": "c",
+                    "label": "Give back blows and chest thrusts"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Place hands on the breastbone and give 100-120 compressions per minute"
+        },
+        {
+            "text": "Which of the following is NOT recommended for treating thermal burns?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Cooling with running water for 10-20 minutes"
+                },
+                {
+                    "value": "b",
+                    "label": "Applying ice directly"
+                },
+                {
+                    "value": "c",
+                    "label": "Covering with sterile non-stick dressing"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Applying ice directly"
+        },
+        {
+            "text": "What is the correct choking response for a conscious adult?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Give gentle chest compressions"
+                },
+                {
+                    "value": "b",
+                    "label": "Perform abdominal thrusts until the obstruction clears"
+                },
+                {
+                    "value": "c",
+                    "label": "Do blind finger sweeps"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Perform abdominal thrusts until the obstruction clears"
+        },
+        {
+            "text": "How should bleeding be controlled?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Apply ice and keep the limb moving"
+                },
+                {
+                    "value": "b",
+                    "label": "Apply direct pressure with a clean cloth and elevate the area"
+                },
+                {
+                    "value": "c",
+                    "label": "Use a tourniquet immediately"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Apply direct pressure with a clean cloth and elevate the area"
+        },
+        {
+            "text": "When should a tourniquet be used in bleeding control?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "As the first response to any bleeding"
+                },
+                {
+                    "value": "b",
+                    "label": "Only if bleeding is from the face"
+                },
+                {
+                    "value": "c",
+                    "label": "As a last resort for limb injuries"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "As a last resort for limb injuries"
+        },
+        {
+            "text": "What is a key step when treating chemical burns?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Apply ice to the affected area"
+                },
+                {
+                    "value": "b",
+                    "label": "Flush with water for at least 20 minutes and remove contaminated clothing"
+                },
+                {
+                    "value": "c",
+                    "label": "Cover the area with plastic wrap"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Flush with water for at least 20 minutes and remove contaminated clothing"
+        },
+        {
+            "text": "How should fractures be handled before medical help arrives?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Try to push the bone back into place"
+                },
+                {
+                    "value": "b",
+                    "label": "Apply direct pressure to the bone"
+                },
+                {
+                    "value": "c",
+                    "label": "Immobilize the area and support joints above and below the injury"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Immobilize the area and support joints above and below the injury"
+        },
+        {
+            "text": "What should you do if someone becomes unconscious while choking?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Try to remove the object with your fingers"
+                },
+                {
+                    "value": "b",
+                    "label": "Begin CPR immediately"
+                },
+                {
+                    "value": "c",
+                    "label": "Continue abdominal thrusts"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Begin CPR immediately"
+        },
+        {
+            "text": "Which sign may indicate a person is going into shock?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "High fever and chills"
+                },
+                {
+                    "value": "b",
+                    "label": "Pale skin, rapid pulse, and confusion"
+                },
+                {
+                    "value": "c",
+                    "label": "Sneezing and coughing"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Pale skin, rapid pulse, and confusion"
+        }
+    ],
+    "vaccination_essentials": [
+        {
+            "text": "What is the primary function of vaccines in the immune system?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They cure infections after symptoms appear"
+                },
+                {
+                    "value": "b",
+                    "label": "They provide vitamins to strengthen the immune system"
+                },
+                {
+                    "value": "c",
+                    "label": "They train the immune system to recognize and combat pathogens"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "They train the immune system to recognize and combat pathogens"
+        },
+        {
+            "text": "Which of the following is a component found in vaccines that helps trigger immunity?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Antibiotics"
+                },
+                {
+                    "value": "b",
+                    "label": "Antigens"
+                },
+                {
+                    "value": "c",
+                    "label": "Red blood cells"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Antigens"
+        },
+        {
+            "text": "Why is it important to follow the childhood immunization schedule?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It ensures optimal protection during key developmental stages"
+                },
+                {
+                    "value": "b",
+                    "label": "It reduces the need for adult vaccines"
+                },
+                {
+                    "value": "c",
+                    "label": "It replaces the need for annual checkups"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "It ensures optimal protection during key developmental stages"
+        },
+        {
+            "text": "Which vaccine is typically recommended annually for adults?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Shingrix (shingles)"
+                },
+                {
+                    "value": "b",
+                    "label": "Flu"
+                },
+                {
+                    "value": "c",
+                    "label": "Tdap booster"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Flu"
+        },
+        {
+            "text": "What does VAERS stand for in vaccine safety monitoring?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Vaccine Administration Emergency Response System"
+                },
+                {
+                    "value": "b",
+                    "label": "Vaccine Adverse Event Reporting System"
+                },
+                {
+                    "value": "c",
+                    "label": "Verified Allergic Effects Registry System"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Vaccine Adverse Event Reporting System"
+        },
+        {
+            "text": "What is true about common vaccine side effects?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They indicate a serious allergic reaction"
+                },
+                {
+                    "value": "b",
+                    "label": "They are signs of the immune system responding normally"
+                },
+                {
+                    "value": "c",
+                    "label": "They require emergency hospitalization"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "They are signs of the immune system responding normally"
+        },
+        {
+            "text": "What should immunocompromised individuals consider regarding vaccination?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They should avoid all vaccines"
+                },
+                {
+                    "value": "b",
+                    "label": "They may need adjusted schedules and should avoid live vaccines"
+                },
+                {
+                    "value": "c",
+                    "label": "They are not eligible for any vaccines"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "They may need adjusted schedules and should avoid live vaccines"
+        },
+        {
+            "text": "Which vaccine is specifically recommended for older adults aged 65 and above?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Polio"
+                },
+                {
+                    "value": "b",
+                    "label": "Pneumococcal"
+                },
+                {
+                    "value": "c",
+                    "label": "DTaP"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Pneumococcal"
+        },
+        {
+            "text": "What should you do if you missed some childhood vaccines?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Nothing, because it's too late to catch up"
+                },
+                {
+                    "value": "b",
+                    "label": "Get vaccinated according to a catch-up schedule"
+                },
+                {
+                    "value": "c",
+                    "label": "Start over from the beginning of the vaccine schedule"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Get vaccinated according to a catch-up schedule"
+        },
+        {
+            "text": "Why are adult booster shots like Tdap recommended every 10 years?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To prevent allergies"
+                },
+                {
+                    "value": "b",
+                    "label": "Because childhood immunity can decline over time"
+                },
+                {
+                    "value": "c",
+                    "label": "To avoid having to get other vaccines"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Because childhood immunity can decline over time"
+        }
+    ],
+    "healthy_aging_essentials": [
+        {
+            "text": "Which of the following is a key component of maintaining physical health while aging?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Avoiding all forms of exercise to prevent injury"
+                },
+                {
+                    "value": "b",
+                    "label": "Strength training, balance exercises, and cardiovascular activity"
+                },
+                {
+                    "value": "c",
+                    "label": "Only doing flexibility routines occasionally"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Strength training, balance exercises, and cardiovascular activity"
+        },
+        {
+            "text": "What type of diet is recommended for optimal aging?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "High-sugar and low-protein diet"
+                },
+                {
+                    "value": "b",
+                    "label": "Mediterranean or MIND diets"
+                },
+                {
+                    "value": "c",
+                    "label": "Exclusively liquid diets"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Mediterranean or MIND diets"
+        },
+        {
+            "text": "Which nutrient is emphasized for aging individuals to support longevity?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Micronutrient density and adequate protein"
+                },
+                {
+                    "value": "b",
+                    "label": "Excess carbohydrates"
+                },
+                {
+                    "value": "c",
+                    "label": "Saturated fats"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Micronutrient density and adequate protein"
+        },
+        {
+            "text": "Why is hydration important for healthy aging?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It boosts bone density directly"
+                },
+                {
+                    "value": "b",
+                    "label": "It helps manage changing metabolic needs"
+                },
+                {
+                    "value": "c",
+                    "label": "It replaces the need for regular exercise"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "It helps manage changing metabolic needs"
+        },
+        {
+            "text": "Which of the following activities supports cognitive preservation?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Avoiding social situations to reduce stress"
+                },
+                {
+                    "value": "b",
+                    "label": "Engaging in continuous learning and stress reduction"
+                },
+                {
+                    "value": "c",
+                    "label": "Reducing sleep to keep the mind active"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Engaging in continuous learning and stress reduction"
+        },
+        {
+            "text": "What is recommended for early detection of cognitive decline?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Only seeking help when memory loss is severe"
+                },
+                {
+                    "value": "b",
+                    "label": "Waiting until symptoms affect daily life"
+                },
+                {
+                    "value": "c",
+                    "label": "Regular mental health checkups"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Regular mental health checkups"
+        },
+        {
+            "text": "Which of the following is NOT listed as a preventive care measure in aging?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Bone density scans"
+                },
+                {
+                    "value": "b",
+                    "label": "Vaccination updates"
+                },
+                {
+                    "value": "c",
+                    "label": "Daily caloric restriction"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Daily caloric restriction"
+        },
+        {
+            "text": "What should be included in a personalized prevention plan for aging individuals?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Generalized advice found online"
+                },
+                {
+                    "value": "b",
+                    "label": "Self-prescribed treatments without consultation"
+                },
+                {
+                    "value": "c",
+                    "label": "Input from healthcare providers"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Input from healthcare providers"
+        },
+        {
+            "text": "Which of the following supports mobility and independence in older adults?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Cardiovascular activity and balance training"
+                },
+                {
+                    "value": "b",
+                    "label": "Avoiding physical activity to prevent injury"
+                },
+                {
+                    "value": "c",
+                    "label": "Daily rest without any movement"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Cardiovascular activity and balance training"
+        },
+        {
+            "text": "What is a core goal of the Healthy Aging Guide?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To reverse all signs of aging permanently"
+                },
+                {
+                    "value": "b",
+                    "label": "To maintain quality of life through the decades"
+                },
+                {
+                    "value": "c",
+                    "label": "To eliminate the need for medical support"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "To maintain quality of life through the decades"
+        }
+    ],
+    "womens_health_essentials": [
+        {
+            "text": "Which of the following is an essential part of reproductive health care for women?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Annual eye exams"
+                },
+                {
+                    "value": "b",
+                    "label": "Contraception options"
+                },
+                {
+                    "value": "c",
+                    "label": "Hearing tests"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Contraception options"
+        },
+        {
+            "text": "Why are pelvic exams and Pap smears important?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "They help detect vision problems early"
+                },
+                {
+                    "value": "b",
+                    "label": "They are required for all insurance plans"
+                },
+                {
+                    "value": "c",
+                    "label": "They are crucial for early detection of health issues"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "They are crucial for early detection of health issues"
+        },
+        {
+            "text": "Which reproductive health measure helps track hormonal patterns?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Fertility awareness"
+                },
+                {
+                    "value": "b",
+                    "label": "HPV testing"
+                },
+                {
+                    "value": "c",
+                    "label": "Bone density scanning"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Fertility awareness"
+        },
+        {
+            "text": "What is a health priority for women in their 40s and 50s?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Preconception care"
+                },
+                {
+                    "value": "b",
+                    "label": "Puberty education"
+                },
+                {
+                    "value": "c",
+                    "label": "Menopause preparation"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Menopause preparation"
+        },
+        {
+            "text": "Which mental health challenge is particularly relevant after childbirth?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Seasonal affective disorder"
+                },
+                {
+                    "value": "b",
+                    "label": "Postpartum depression"
+                },
+                {
+                    "value": "c",
+                    "label": "Social anxiety"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Postpartum depression"
+        },
+        {
+            "text": "What type of screening is recommended for women over the age of 40?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "HPV DNA testing"
+                },
+                {
+                    "value": "b",
+                    "label": "Mammograms"
+                },
+                {
+                    "value": "c",
+                    "label": "Hearing evaluations"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Mammograms"
+        },
+        {
+            "text": "Which of the following addresses PMDD and body image concerns?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Bone density scans"
+                },
+                {
+                    "value": "b",
+                    "label": "Mental wellness care"
+                },
+                {
+                    "value": "c",
+                    "label": "Cardiovascular risk tests"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Mental wellness care"
+        },
+        {
+            "text": "What is a key health focus for women aged 60 and above?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Menstrual cycle tracking"
+                },
+                {
+                    "value": "b",
+                    "label": "Bone density management"
+                },
+                {
+                    "value": "c",
+                    "label": "Fertility awareness"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Bone density management"
+        },
+        {
+            "text": "What is the purpose of cardiovascular risk assessments in women?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To assess mental health risk"
+                },
+                {
+                    "value": "b",
+                    "label": "To identify heart-related health risks early"
+                },
+                {
+                    "value": "c",
+                    "label": "To evaluate fertility status"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "To identify heart-related health risks early"
+        },
+        {
+            "text": "Which strategy is commonly used to reduce stress and improve mental wellness?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Pap smears"
+                },
+                {
+                    "value": "b",
+                    "label": "Stress coping strategies"
+                },
+                {
+                    "value": "c",
+                    "label": "HPV vaccines"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Stress coping strategies"
+        }
+    ],
+    "pediatric_health_essentials": [
+        {
+            "text": "Which of the following is a key developmental milestone for infants aged 0-12 months?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Language acquisition"
+                },
+                {
+                    "value": "b",
+                    "label": "Motor skills development"
+                },
+                {
+                    "value": "c",
+                    "label": "Cognitive leaps"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Motor skills development"
+        },
+        {
+            "text": "At what age is the MMR vaccine typically administered?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Birth"
+                },
+                {
+                    "value": "b",
+                    "label": "2 months"
+                },
+                {
+                    "value": "c",
+                    "label": "12 months"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "12 months"
+        },
+        {
+            "text": "What is a recommended form of preventive care for children?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Annual vision therapy"
+                },
+                {
+                    "value": "b",
+                    "label": "Well-child visits"
+                },
+                {
+                    "value": "c",
+                    "label": "Daily blood tests"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Well-child visits"
+        },
+        {
+            "text": "Which developmental stage is associated with social-emotional growth?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "0-12 months"
+                },
+                {
+                    "value": "b",
+                    "label": "4-6 years"
+                },
+                {
+                    "value": "c",
+                    "label": "7-12 years"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "4-6 years"
+        },
+        {
+            "text": "Which of the following illnesses is common in children and affects the ears?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Hand-foot-mouth disease"
+                },
+                {
+                    "value": "b",
+                    "label": "RSV"
+                },
+                {
+                    "value": "c",
+                    "label": "Ear infections"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Ear infections"
+        },
+        {
+            "text": "Which vaccine is recommended for adolescents around 11-12 years old?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "PCV13"
+                },
+                {
+                    "value": "b",
+                    "label": "HPV"
+                },
+                {
+                    "value": "c",
+                    "label": "Hib"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "HPV"
+        },
+        {
+            "text": "Why is breastfeeding considered beneficial in early nutrition?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "It helps prevent tooth decay"
+                },
+                {
+                    "value": "b",
+                    "label": "It supports language development"
+                },
+                {
+                    "value": "c",
+                    "label": "It provides vital nutrients and immunity"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "It provides vital nutrients and immunity"
+        },
+        {
+            "text": "What is a nutritional goal during early childhood?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Promote fasting"
+                },
+                {
+                    "value": "b",
+                    "label": "Introduce solid foods"
+                },
+                {
+                    "value": "c",
+                    "label": "Avoid fruits"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Introduce solid foods"
+        },
+        {
+            "text": "Which disease listed is a viral infection common in children?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Childhood asthma"
+                },
+                {
+                    "value": "b",
+                    "label": "Hand-foot-mouth disease"
+                },
+                {
+                    "value": "c",
+                    "label": "Food allergies"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Hand-foot-mouth disease"
+        },
+        {
+            "text": "What health concern is linked with nutrition and physical activity in children?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Childhood obesity"
+                },
+                {
+                    "value": "b",
+                    "label": "Language delay"
+                },
+                {
+                    "value": "c",
+                    "label": "Asthma"
+                }
+            ],
+            "correctAnswer": "a",
+            "correctLabel": "Childhood obesity"
+        }
+    ],
+    "emergency_preparedness_basics": [
+        {
+            "text": "Which of the following items is considered essential in a 72-hour emergency kit?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Canned soda"
+                },
+                {
+                    "value": "b",
+                    "label": "Water (1 gallon/person/day)"
+                },
+                {
+                    "value": "c",
+                    "label": "Phone charger"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Water (1 gallon/person/day)"
+        },
+        {
+            "text": "What is one way to prepare for an earthquake?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Install water barriers"
+                },
+                {
+                    "value": "b",
+                    "label": "Create defensible space"
+                },
+                {
+                    "value": "c",
+                    "label": "Secure heavy furniture"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Secure heavy furniture"
+        },
+        {
+            "text": "Which of the following is part of an evacuation plan?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Store batteries near exits"
+                },
+                {
+                    "value": "b",
+                    "label": "Identify family meeting points"
+                },
+                {
+                    "value": "c",
+                    "label": "Download streaming apps"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Identify family meeting points"
+        },
+        {
+            "text": "What emergency communication tool does not require electricity or internet?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "FEMA mobile app"
+                },
+                {
+                    "value": "b",
+                    "label": "Hand-crank radio"
+                },
+                {
+                    "value": "c",
+                    "label": "Emergency hotline"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Hand-crank radio"
+        },
+        {
+            "text": "Which item is included in emergency kits to help maintain body temperature?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Portable fan"
+                },
+                {
+                    "value": "b",
+                    "label": "Emergency blanket"
+                },
+                {
+                    "value": "c",
+                    "label": "Raincoat"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Emergency blanket"
+        },
+        {
+            "text": "What is a recommended flood preparedness strategy?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Build a treehouse"
+                },
+                {
+                    "value": "b",
+                    "label": "Use sandbags indoors"
+                },
+                {
+                    "value": "c",
+                    "label": "Implement elevation strategies"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Implement elevation strategies"
+        },
+        {
+            "text": "What is a purpose of having a designated out-of-area contact person?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To call for pizza delivery"
+                },
+                {
+                    "value": "b",
+                    "label": "To relay messages if local communication is down"
+                },
+                {
+                    "value": "c",
+                    "label": "To keep pets safe during evacuation"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "To relay messages if local communication is down"
+        },
+        {
+            "text": "Which of the following is critical for pet evacuation planning?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Assigning pets a hiding spot"
+                },
+                {
+                    "value": "b",
+                    "label": "Including pets in evacuation routes"
+                },
+                {
+                    "value": "c",
+                    "label": "Feeding them extra the night before"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "Including pets in evacuation routes"
+        },
+        {
+            "text": "Which item helps you receive alerts if your phone battery dies?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "Bluetooth speaker"
+                },
+                {
+                    "value": "b",
+                    "label": "Solar charger"
+                },
+                {
+                    "value": "c",
+                    "label": "Emergency alert system or radio"
+                }
+            ],
+            "correctAnswer": "c",
+            "correctLabel": "Emergency alert system or radio"
+        },
+        {
+            "text": "What is the purpose of a family meeting point in emergency planning?",
+            "options": [
+                {
+                    "value": "a",
+                    "label": "To play games during a power outage"
+                },
+                {
+                    "value": "b",
+                    "label": "To regroup after evacuating"
+                },
+                {
+                    "value": "c",
+                    "label": "To store extra food supplies"
+                }
+            ],
+            "correctAnswer": "b",
+            "correctLabel": "To regroup after evacuating"
+        }
+    ]
+}

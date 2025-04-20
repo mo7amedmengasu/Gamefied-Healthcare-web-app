@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="/quiz-style.css">
+</head>
+
+<body>
+    <nav class="quiz-nav">
+        <a href="/dashboard/quizes" class="back-btn">← Back to quizes</a>
+        <h1 class="quiz-title">Emergency Prep Quiz Result</h1>
+    </nav>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz Results</h1>
+            <div class="score-display">Score: <%= score %>/10 (<%= percentage %>% )</div>
+        </div>
+
+        <% questions.forEach((question, index)=> { %>
+            <div class="question-card <%= question.correct ? 'correct-answer' : 'incorrect-answer' %>">
+                <div class="question-text">
+                    <%= index + 1 %>. <%= question.text %>
+                </div>
+                <div class="feedback">
+                    <p>Your answer: <%= question.userAnswer %>
+                    </p>
+                    <p>Correct answer: <%= question.correctAnswer %>
+                    </p>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+</body>
+
+</html>

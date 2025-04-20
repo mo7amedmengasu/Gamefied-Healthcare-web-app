@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Activity Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/activity.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="left-section">
+            <button class="back-button" onclick="window.history.back()">← Back</button>
+            <h2>Activity Advice</h2>
+            <div class="advice-box">
+                <p>
+                    <%= advice %>
+                </p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Points Over Time</h2>
+            <canvas id="activityChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('activityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: <%= JSON.stringify(timeLabels) %>,
+                datasets: [{
+                    label: 'User Points',
+                    data: <%= JSON.stringify(userPoints) %>,
+                    borderColor: '#6366f1',
+                    tension: 0.4,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#e5e7eb'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

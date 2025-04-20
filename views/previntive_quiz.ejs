@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventive Healthcare Quiz</title>
+    <link rel="stylesheet" href="/quiz-style.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="quiz-nav">
+        <a href="/dashboard/quizes" class="back-btn">← Back to quizes</a>
+        <h1 class="quiz-title">Preventive Healthcare Quiz</h1>
+    </nav>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Preventive Healthcare Quiz</h1>
+            <p>Test your knowledge about preventive healthcare practices</p>
+        </div>
+
+        <form id="healthQuiz" action="/dashboard/quizes/preventive_quiz/submit-quiz" method="POST">
+            <% questions.forEach((question, index)=> { %>
+                <div class="question-card">
+                    <div class="question-text">
+                        <%= index + 1 %>. <%= question.text %>
+                    </div>
+                    <div>
+                        <% question.options.forEach((option, optionIndex)=> { %>
+                            <input type="radio" name="q<%= index + 1 %>" id="q<%= index + 1 %><%= option.value %>"
+                                value="<%= option.value %>">
+                            <label class="option-label" for="q<%= index + 1 %><%= option.value %>">
+                                <%= option.label %>
+                            </label>
+                            <% if(optionIndex < question.options.length - 1) { %> <br>
+                                <% } %>
+                                    <% }); %>
+                    </div>
+                </div>
+                <% }); %>
+
+                    <button type="submit" class="submit-btn">Check Your Score</button>
+        </form>
+    </div>
+</body>
+
+</html>

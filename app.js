@@ -2,6 +2,7 @@ import express from 'express';
 import axios from 'axios';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import fs from 'fs/promises';
 
 // Hardcoded Gemini API Key (⚠️ Not secure, only for demo/testing)
 const GEMINI_API_KEY = 'AIzaSyDWQMnQyEtmn1HwmsQgp5xZrtJ60Y9jvow';
@@ -13,6 +14,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = 3000;
 
+// Prompts for different health topics
 const prevenrion_prompt = `You are a preventive healthcare assistant. Explain medical concepts in simple terms.
 Focus on:
 - Early detection benefits
@@ -247,6 +249,21 @@ make your answer short and easy to understand and well formatted.
 
 Now answer this emergency prep question:
 Question: `;
+//end of prompts
+
+
+
+const quizzes = await fs.readFile('quizes_questions.json', 'utf8');
+const preventive_questions = JSON.parse(quizzes)['preventive_health'];
+const nutrition_questions = JSON.parse(quizzes)['nutrition_basics'];
+const mental_health_questions = JSON.parse(quizzes)['mental_health_basics'];
+const chronic_conditions_questions = JSON.parse(quizzes)['chronic_conditions_basics'];
+const first_aid_questions = JSON.parse(quizzes)['first_aid_essentials'];
+const vaccinations_questions = JSON.parse(quizzes)['vaccination_essentials'];
+const healthy_aging_questions = JSON.parse(quizzes)['healthy_aging_essentials'];
+const womens_health_questions = JSON.parse(quizzes)['womens_health_essentials'];
+const pediatric_care_questions = JSON.parse(quizzes)['pediatric_health_essentials'];
+const emergency_prep_questions = JSON.parse(quizzes)['emergency_preparedness_basics'];
 
 
 // Express app setup
@@ -255,10 +272,21 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// Routes
+//Routes
 app.get('/', (req, res) => {
-    res.render('login.ejs', { responseText: null });
+    res.render('login.ejs');
 });
+// app.get('/', (req, res) => {
+//     // Sample data - replace with your actual data
+//     const activityData = {
+//         advice: "Great job maintaining consistent activity! Try adding 30 minutes of exercise 5 days a week.",
+//         timeLabels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+//         userPoints: [45, 52, 60, 48, 65, 70, 55]
+//     };
+
+//     res.render('activity.ejs', activityData);
+// });
+
 app.post('/dashboard', (req, res) => {
     res.render('dashboard.ejs', { responseText: null });
 });
@@ -300,9 +328,291 @@ app.get('/dashboard/learn/pediatric', (req, res) => {
 app.get('/dashboard/learn/emergency', (req, res) => {
     res.render('emergency-prep.ejs', { responseText: null });
 });
+app.get('/dashboard/quizes', (req, res) => {
+    res.render('quizes.ejs');
+});
+
+app.get('/dashboard/quizes/preventive_quiz', (req, res) => {
+    res.render('previntive_quiz.ejs', { questions: preventive_questions });
+});
+app.post('/dashboard/quizes/preventive_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of preventive_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('previntive_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+app.get('/dashboard/quizes/nutrition_quiz', (req, res) => {
+    res.render('nutrition_quiz.ejs', { questions: nutrition_questions });
+});
+app.post('/dashboard/quizes/nutrition_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of nutrition_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('nutrition_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/mental-health_quiz', (req, res) => {
+    res.render('mental_quiz.ejs', { questions: mental_health_questions });
+});
+app.post('/dashboard/quizes/mental-health_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of mental_health_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('mental_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/chronic_quiz', (req, res) => {
+    res.render('chronic_quiz.ejs', { questions: chronic_conditions_questions });
+});
+app.post('/dashboard/quizes/chronic_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of chronic_conditions_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('chronic_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/first-aid_quiz', (req, res) => {
+    res.render('firstaid_quiz.ejs', { questions: first_aid_questions });
+});
+app.post('/dashboard/quizes/first-aid_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of first_aid_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('firstaid_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/vaccines_quiz', (req, res) => {
+    res.render('vaccinations_quiz.ejs', { questions: vaccinations_questions });
+});
+app.post('/dashboard/quizes/vaccines_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of vaccinations_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('vaccination_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/aging_quiz', (req, res) => {
+    res.render('healthyaging_quiz.ejs', { questions: healthy_aging_questions });
+});
+app.post('/dashboard/quizes/aging_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of healthy_aging_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('healthyaging_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/womens_quiz', (req, res) => {
+    res.render('womens_quiz.ejs', { questions: womens_health_questions });
+});
+app.post('/dashboard/quizes/womens_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of womens_health_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('womens_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/pediatric_quiz', (req, res) => {
+    res.render('pediatric_quiz.ejs', { questions: pediatric_care_questions });
+});
+app.post('/dashboard/quizes/pediatric_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of pediatric_care_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('pediatric_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
+
+app.get('/dashboard/quizes/emergency_quiz', (req, res) => {
+    res.render('emergency_quiz.ejs', { questions: emergency_prep_questions });
+});
+app.post('/dashboard/quizes/emergency_quiz/submit-quiz', (req, res) => {
+    const userAnswers = req.body;
+    let score = 0;
+    const results = [];
+    var i = 1;
+    for (const question of emergency_prep_questions) {
+        const isCorrect = userAnswers["q" + i] === question.correctAnswer;
+
+        if (isCorrect) score++;
+
+        results.push({
+            text: question.text,
+            userAnswer: userAnswers["q" + i] || 'No answer',
+            correctAnswer: question.correctAnswer,
+            correct: isCorrect
+        });
+        i++;
+    }
+    res.render('emergency_result.ejs', {
+        score: score,
+        percentage: ((score / 10) * 100).toFixed(0),
+        questions: results
+    });
+});
 
 
-
+// POST routes for generating content
 app.post('/dashboard/learn/mental-health/generate', async (req, res) => {
     const fullPrompt = mentalhealth_prompt + req.body.question;
     try {
@@ -562,6 +872,8 @@ app.post('/dashboard/learn/emergency/generate', async (req, res) => {
         res.render('emergency-prep.ejs', { responseText: 'Failed to fetch Gemini response.' });
     }
 });
+//end of POST routes
+
 app.listen(3000, () => {
     console.log('Server running at http://localhost:3000');
 });
