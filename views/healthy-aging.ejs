@@ -57,7 +57,7 @@
                         <li>Micronutrient density</li>
                         <li>Hydration management</li>
                     </ul>
-                        Consider Mediterranean or MIND diets, with adjustments for changing metabolic needs.
+                    Consider Mediterranean or MIND diets, with adjustments for changing metabolic needs.
                     </p>
 
                     <h2>Cognitive Preservation</h2>
@@ -90,7 +90,7 @@
         <section class="health-interaction">
             <h2>Aging Questions?</h2>
             <div class="query-container">
-                <form action="/generate" method="POST">
+                <form action="/dashboard/learn/aging/generate" method="POST">
                     <div class="input-group">
                         <textarea name="question" rows="4"
                             placeholder="Ask aging-related questions (e.g., 'Best exercises for osteoporosis prevention?')"
@@ -105,7 +105,8 @@
                     <div class="response-card">
                         <div class="response-content">
                             <%= responseText %>
-                                <p class="medical-note">Consult your healthcare provider for personalized aging plans</p>
+                                <p class="medical-note">Consult your healthcare provider for personalized aging plans
+                                </p>
                         </div>
                     </div>
                     <% } %>
@@ -113,4 +114,5 @@
         </section>
     </div>
 </body>
+
 </html>

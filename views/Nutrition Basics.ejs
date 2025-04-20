@@ -139,14 +139,14 @@
         <section class="health-interaction">
             <h2>Personalized Nutrition Guidance</h2>
             <div class="query-container">
-                <form action="/generate" method="POST">
+                <form action="/dashboard/learn/nutrition/generate" method="POST">
                     <div class="input-group">
                         <textarea name="question" rows="4"
                             placeholder="Ask detailed nutrition questions (e.g., 'How can I improve gut health through diet?')"
                             aria-label="Nutrition inquiry input"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">
-                        Get Customized Advice
+                        ask for clarification or more information
                     </button>
                 </form>
 
@@ -154,7 +154,7 @@
                     <div class="response-card">
                         <div class="response-content">
                             <%= responseText %>
-                                <p class="medical-note">For chronic conditions, consult a registered dietitian</p>
+                                <p class="medical-note">always consult a doctor</p>
                         </div>
                     </div>
                     <% } %>

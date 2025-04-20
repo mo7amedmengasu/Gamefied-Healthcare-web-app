@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pediatric Health Center</title>
     <link rel="stylesheet" href="/pediatric-care.css">
-    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <div class="article-content">
                 <section class="intro-section">
                     <p class="lead-paragraph">
-                        Essential guidance for nurturing healthy growth from infancy through adolescence. This 
+                        Essential guidance for nurturing healthy growth from infancy through adolescence. This
                         comprehensive resource covers developmental milestones, preventive care, and managing
                         common childhood health concerns.
                     </p>
@@ -86,7 +87,7 @@
         <section class="health-interaction">
             <h2>Pediatric Questions?</h2>
             <div class="query-container">
-                <form action="/generate" method="POST">
+                <form action="/dashboard/learn/pediatric/generate" method="POST">
                     <div class="input-group">
                         <textarea name="question" rows="4"
                             placeholder="Ask pediatric care questions (e.g., 'Normal fever range for toddlers?')"
@@ -101,7 +102,8 @@
                     <div class="response-card">
                         <div class="response-content">
                             <%= responseText %>
-                                <p class="medical-note">Always consult your pediatrician for individual medical advice</p>
+                                <p class="medical-note">Always consult your pediatrician for individual medical advice
+                                </p>
                         </div>
                     </div>
                     <% } %>
@@ -109,4 +111,5 @@
         </section>
     </div>
 </body>
+
 </html>
