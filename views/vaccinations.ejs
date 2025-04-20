@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Essentials</title>
+    <link rel="stylesheet" href="/vaccinations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Vaccination Center</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Understanding Vaccines and Immunization</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Vaccines are one of medicine's greatest achievements, preventing millions of deaths worldwide.
+                        This guide explains vaccine science, recommended schedules, and addresses common concerns.
+                        Stay protected through life with up-to-date immunization knowledge.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>How Vaccines Work</h2>
+                    <p>
+                        Vaccines train the immune system to recognize and combat pathogens without causing illness.
+                        They contain antigens - harmless pieces of viruses or bacteria that stimulate antibody
+                        production.
+                        Memory cells remain in the body, providing long-term protection against future infections.
+                    </p>
+
+                    <h2>Childhood Immunization</h2>
+                    <p>
+                        The CDC recommends vaccinations against 16 diseases by age 18. Key vaccines include:
+                    <ul class="medical-list">
+                        <li>DTaP (Diphtheria, Tetanus, Pertussis)</li>
+                        <li>MMR (Measles, Mumps, Rubella)</li>
+                        <li>Polio</li>
+                        <li>Hepatitis B</li>
+                    </ul>
+                    Follow the recommended schedule to ensure optimal protection during vulnerable developmental stages.
+                    </p>
+
+                    <h2>Adult Vaccinations</h2>
+                    <p>
+                        Immunity from childhood vaccines can wane, and new risks emerge with age. Essential adult
+                        vaccines include:
+                    <ul class="medical-list">
+                        <li>Flu (annual)</li>
+                        <li>Tdap/Td boosters (every 10 years)</li>
+                        <li>Shingrix (shingles)</li>
+                        <li>Pneumococcal (65+)</li>
+                    </ul>
+                    Travel vaccines and occupational requirements should also be considered.
+                    </p>
+
+                    <h2>Vaccine Safety</h2>
+                    <p>
+                        All vaccines undergo rigorous testing through multiple trial phases before approval. Common side
+                        effects
+                        like soreness or mild fever are normal immune responses. Severe reactions are extremely rare (1
+                        in million
+                        doses). Continuous monitoring through VAERS ensures ongoing safety surveillance.
+                    </p>
+
+                    <h2>Special Considerations</h2>
+                    <p>
+                        Immunocompromised individuals may need adjusted schedules. Live vaccines (MMR, Varicella) are
+                        generally
+                        avoided during pregnancy. Discuss allergies (e.g., egg, latex) with your provider. Catch-up
+                        schedules
+                        exist for missed childhood vaccines - it's never too late to vaccinate.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Vaccine Questions?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask vaccine-related questions (e.g., 'Are COVID boosters needed annually?')"
+                            aria-label="Vaccine question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Immunization Info
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Consult your healthcare provider for personal vaccine
+                                    recommendations</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Lessons</title>
+    <link rel="stylesheet" href="/lessons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard" class="back-btn">← Back</a>
+        <h1>Health Education Hub</h1>
+    </nav>
+
+    <div class="lesson-container">
+        <% const topics=[ { title: 'Preventive Care' , url: '/preventive' }, { title: 'Nutrition Basics' ,
+            url: '/nutrition' }, { title: 'Mental Health' , url: '/mental-health' }, { title: 'Chronic Conditions' ,
+            url: '/chronic' }, { title: 'First Aid Skills' , url: '/first-aid' }, { title: 'Vaccinations' ,
+            url: '/vaccines' }, { title: 'Healthy Aging' , url: '/aging' }, { title: 'Women\' s Health', url: '/womens'
+            }, { title: 'Pediatric Care' , url: '/pediatric' }, { title: 'Emergency Prep' , url: '/emergency' } ] %>
+
+            <% topics.forEach((topic, index)=> { %>
+                <a href="/dashboard/learn<%= topic.url %>" class="lesson-card color-<%= index + 1 %>">
+                    <div class="card-content">
+                        <h2>
+                            <%= topic.title %>
+                        </h2>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </a>
+                <% }) %>
+    </div>
+</body>
+
+</html>

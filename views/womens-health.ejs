@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Health Hub</title>
+    <link rel="stylesheet" href="/womens-health.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Women's Health Center</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Comprehensive Women's Health</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Empower your health journey with evidence-based guidance covering all life stages. From 
+                        reproductive health to menopause management, this resource provides essential information
+                        for optimal physical and mental well-being.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Reproductive Health</h2>
+                    <p>
+                        Key aspects of gynecological care:
+                    <ul class="womens-list">
+                        <li>Menstrual cycle tracking</li>
+                        <li>Contraception options</li>
+                        <li>Fertility awareness</li>
+                        <li>STI prevention</li>
+                    </ul>
+                    Regular pelvic exams and Pap smears are crucial for early detection of health issues.
+                    </p>
+
+                    <h2>Life Stage Considerations</h2>
+                    <p>
+                        Health priorities by phase:
+                    <ul class="womens-list">
+                        <li>Adolescence: Puberty education</li>
+                        <li>20s-30s: Preconception care</li>
+                        <li>40s-50s: Menopause preparation</li>
+                        <li>60s+: Bone density management</li>
+                    </ul>
+                    </p>
+
+                    <h2>Mental Wellness</h2>
+                    <p>
+                        Addressing gender-specific challenges:
+                    <ul class="womens-list">
+                        <li>Postpartum depression</li>
+                        <li>PMDD management</li>
+                        <li>Body image issues</li>
+                        <li>Stress coping strategies</li>
+                    </ul>
+                    </p>
+
+                    <h2>Preventive Screenings</h2>
+                    <p>
+                        Essential health checks:
+                    <ul class="womens-list">
+                        <li>Mammograms (40+)</li>
+                        <li>HPV DNA testing</li>
+                        <li>Bone density scans</li>
+                        <li>Cardiovascular risk assessment</li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Women's Health Questions?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask women's health questions (e.g., 'Best exercises during pregnancy?')"
+                            aria-label="Health question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Health Insights
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Consult your healthcare provider for personal medical advice</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

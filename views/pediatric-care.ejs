@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatric Health Center</title>
+    <link rel="stylesheet" href="/pediatric-care.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Pediatric Care Center</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Child Health & Development</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Essential guidance for nurturing healthy growth from infancy through adolescence. This 
+                        comprehensive resource covers developmental milestones, preventive care, and managing
+                        common childhood health concerns.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Developmental Milestones</h2>
+                    <p>
+                        Key growth indicators by age:
+                    <ul class="pediatric-list">
+                        <li>0-12 months: Motor skills development</li>
+                        <li>1-3 years: Language acquisition</li>
+                        <li>4-6 years: Social-emotional growth</li>
+                        <li>7-12 years: Cognitive leaps</li>
+                    </ul>
+                    Regular well-child visits help monitor healthy progression.
+                    </p>
+
+                    <h2>Vaccination Schedule</h2>
+                    <p>
+                        CDC-recommended immunizations:
+                    <ul class="pediatric-list">
+                        <li>Birth: Hepatitis B</li>
+                        <li>2 months: DTaP, Hib, PCV13</li>
+                        <li>12 months: MMR, Varicella</li>
+                        <li>11-12 years: HPV, Tdap</li>
+                    </ul>
+                    </p>
+
+                    <h2>Nutrition Guidelines</h2>
+                    <p>
+                        Building healthy eating habits:
+                    <ul class="pediatric-list">
+                        <li>Breastfeeding benefits</li>
+                        <li>Introducing solid foods</li>
+                        <li>Managing food allergies</li>
+                        <li>Preventing childhood obesity</li>
+                    </ul>
+                    </p>
+
+                    <h2>Common Childhood Illnesses</h2>
+                    <p>
+                        Recognizing and managing:
+                    <ul class="pediatric-list">
+                        <li>Ear infections</li>
+                        <li>Respiratory syncytial virus (RSV)</li>
+                        <li>Hand-foot-mouth disease</li>
+                        <li>Childhood asthma</li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Pediatric Questions?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask pediatric care questions (e.g., 'Normal fever range for toddlers?')"
+                            aria-label="Pediatric question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Pediatric Insights
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Always consult your pediatrician for individual medical advice</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

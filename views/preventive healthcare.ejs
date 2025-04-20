@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Preventive Healthcare</title>
+    <link rel="stylesheet" href="/preventive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">← Back to lessons</a>
+        <h1>Preventive Healthcare Hub</h1>
+    </nav>
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Your Guide to Staying Healthy Through Prevention</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Think of preventive healthcare like regular maintenance for your car - it's about catching small
+                        issues early and preventing big problems down the road. Rather than waiting until you feel sick,
+                        preventive care focuses on keeping you healthy through regular check-ups, vaccines, and healthy
+                        habits. This approach helps doctors spot potential health concerns before they become serious,
+                        often making treatment easier and more effective.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Why Regular Check-Ups Matter</h2>
+                    <p>
+                        Even if you feel perfectly healthy, annual check-ups play a crucial role in maintaining your
+                        wellbeing. During these visits, your doctor does more than just check your blood pressure. They
+                        review your medical history, assess your risk for various conditions based on your age and
+                        lifestyle, and recommend appropriate screenings. For example, a simple blood test can reveal
+                        early signs of diabetes years before symptoms appear, giving you time to make lifestyle changes
+                        that might prevent the disease entirely.
+                    </p>
+
+                    <h2>Understanding Screenings</h2>
+                    <p>
+                        Screenings are medical tests that look for health problems before symptoms develop. Common
+                        examples include mammograms for breast cancer and colonoscopies for colorectal cancer. These
+                        tests are recommended at specific ages because research shows when they're most effective. While
+                        getting a colonoscopy might not sound pleasant, finding and removing precancerous polyps during
+                        this procedure can actually prevent cancer from developing in the first place.
+                    </p>
+
+                    <h2>Vaccines Aren't Just for Kids</h2>
+                    <p>
+                        Many adults don't realize they need vaccine updates throughout their lives. The flu shot needs
+                        renewal every year because influenza viruses constantly change. Shingles vaccines become
+                        important as we age because our immunity naturally weakens over time. Even if you were
+                        vaccinated as a child, some protections like tetanus need booster shots every decade. These
+                        vaccines act as training sessions for your immune system, helping it recognize and fight
+                        dangerous infections quickly.
+                    </p>
+
+                    <h2>Daily Choices Add Up</h2>
+                    <p>
+                        What you do every day significantly impacts your long-term health. Eating more vegetables and
+                        whole grains helps maintain a healthy weight and reduces inflammation in your body. Regular
+                        physical activity strengthens not just your muscles, but also your heart and bones. Getting
+                        enough sleep and managing stress aren't just about feeling good today - they help protect
+                        against conditions like heart disease and depression later in life. Small, consistent changes
+                        often make more difference than drastic short-term fixes.
+                    </p>
+
+                    <h2>Age-Appropriate Prevention</h2>
+                    <p>
+                        Your preventive care needs change as you grow older. In your 20s and 30s, the focus might be on
+                        establishing healthy habits and getting baseline cholesterol checks. By your 40s, cancer
+                        screenings and diabetes prevention become priorities. After 50, bone density scans and more
+                        frequent heart health checks come into play. Your doctor can help create a personalized schedule
+                        that matches your age, gender, and family history.
+                    </p>
+
+                    <h2>Making Prevention Affordable</h2>
+                    <p>
+                        Many people avoid preventive care due to cost concerns, but most insurance plans now cover these
+                        services completely. The Affordable Care Act requires coverage for recommended screenings and
+                        vaccines without any out-of-pocket costs. If you're uninsured, community health centers often
+                        provide low-cost or free preventive services. Remember, catching a health issue early through
+                        prevention is always cheaper than treating advanced illness later.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Have Questions About Prevention?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask something specific (e.g., 'What preventive checks do I need at 50?')"
+                            aria-label="Health question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Personalized Advice
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Always consult your doctor for medical advice specific to your
+                                    situation</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

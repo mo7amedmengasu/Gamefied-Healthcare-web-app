@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Mental Health</title>
+    <link rel="stylesheet" href="/mental-health.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Mental Wellness Hub</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Caring for Your Mental Health</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Mental health is the foundation of emotional well-being and quality of life. Just as we care for
+                        our physical health,
+                        maintaining mental wellness requires awareness, prevention, and timely support. This guide
+                        explores practical strategies
+                        for emotional resilience, recognizing warning signs, and accessing effective support systems.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Understanding Emotional Well-being</h2>
+                    <p>
+                        Mental health encompasses our emotional, psychological, and social well-being. It affects how we
+                        think, feel, and act
+                        in daily life. Contrary to common belief, mental wellness isn't just the absence of mental
+                        illness - it's the presence
+                        of positive characteristics like emotional resilience, healthy relationships, and the ability to
+                        manage life's challenges.
+                    </p>
+
+                    <h2>Recognizing Common Challenges</h2>
+                    <p>
+                        Many people experience temporary mental health challenges, while others manage chronic
+                        conditions. Common issues include
+                        anxiety disorders, depression, and stress-related conditions. Symptoms might manifest as
+                        persistent sadness, excessive
+                        worries, changes in sleep patterns, or difficulty concentrating. Early recognition and
+                        intervention can significantly
+                        improve outcomes.
+                    </p>
+
+                    <h2>Building Resilience</h2>
+                    <p>
+                        Developing emotional resilience involves cultivating healthy coping mechanisms. Regular
+                        mindfulness practice, maintaining
+                        social connections, and setting realistic goals can strengthen mental fortitude. Cognitive
+                        Behavioral Therapy (CBT)
+                        techniques help reframe negative thought patterns, while physical activity releases endorphins
+                        that naturally boost mood.
+                    </p>
+
+                    <h2>Professional Support Options</h2>
+                    <p>
+                        Various evidence-based treatments are available, including psychotherapy, medication, and
+                        holistic approaches.
+                        Teletherapy has made mental health services more accessible than ever. It's crucial to find a
+                        licensed professional
+                        who aligns with your needs, whether that's a psychologist, psychiatrist, or certified counselor.
+                    </p>
+
+                    <h2>Self-Care Strategies</h2>
+                    <p>
+                        Effective self-care goes beyond occasional treats. Establish routines that include adequate
+                        sleep, balanced nutrition,
+                        and regular physical activity. Digital detoxes, creative expression, and spending time in nature
+                        can significantly
+                        reduce stress levels. Remember that self-care is personal - what works for others might not work
+                        for you.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Mental Health Support</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask about mental wellness (e.g., 'How can I manage anxiety naturally?')"
+                            aria-label="Mental health question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Guidance
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">For emergencies, contact your local crisis hotline</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

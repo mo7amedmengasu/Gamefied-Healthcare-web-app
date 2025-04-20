@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Nutrition Fundamentals</title>
+    <link rel="stylesheet" href="/Nutrition.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">← Back to lessons</a>
+        <h1>Nutrition Education Hub</h1>
+    </nav>
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Nourishing Your Body: A Comprehensive Guide to Nutrition</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Nutrition forms the bedrock of our physical and mental wellbeing, acting as both fuel and
+                        building material
+                        for every cell in our bodies. Unlike temporary diets that come and go, understanding fundamental
+                        nutritional
+                        principles empowers us to make informed choices that support long-term health. This guide
+                        explores how
+                        different nutrients interact with our biology and how to develop sustainable eating patterns
+                        that adapt
+                        to our changing needs throughout life.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>The Science of Sustenance</h2>
+                    <p>
+                        Our bodies operate like sophisticated biochemical engines, requiring diverse nutrients to
+                        perform
+                        countless daily functions. Proteins act as both structural components and molecular machines,
+                        building everything from muscle fibers to infection-fighting antibodies. Complete proteins
+                        containing all essential amino acids can be found in animal products, while plant-based sources
+                        often benefit from strategic combination, like pairing rice with beans. Carbohydrates, often
+                        misunderstood, serve as the primary energy currency for our cells, with complex varieties like
+                        whole grains providing sustained fuel compared to simple sugars that offer fleeting energy
+                        spikes.
+                    </p>
+
+                    <p>
+                        Dietary fats, long vilified, emerge as crucial players in hormone production and nutrient
+                        absorption.
+                        The distinction between saturated and unsaturated fats matters profoundly - while olive oil and
+                        avocados support cardiovascular health, trans fats found in processed foods can undermine it.
+                        Balancing these macronutrients isn't about rigid ratios but rather understanding how different
+                        combinations affect energy levels, cognitive function, and metabolic health throughout the day.
+                    </p>
+
+                    <h2>The Invisible Essentials</h2>
+                    <p>
+                        Beyond the macronutrients that dominate nutrition labels lies the subtle world of
+                        micronutrients.
+                        These vitamins and minerals operate as essential co-factors in thousands of biochemical
+                        reactions.
+                        Iron's role in oxygen transport explains why deficiency leads to fatigue, while calcium's
+                        structural
+                        importance extends beyond bones to include nerve transmission and muscle function. Modern soil
+                        depletion and food processing have made mindful micronutrient consumption increasingly
+                        important,
+                        with colorful produce often indicating phytonutrient diversity that supports cellular repair and
+                        inflammation regulation.
+                    </p>
+
+                    <p>
+                        Vitamin D deficiency has reached epidemic proportions in screen-dominated lifestyles, impacting
+                        everything from immune response to mood regulation. While supplementation helps, understanding
+                        dietary sources like fatty fish and egg yolks, combined with safe sun exposure, forms a more
+                        holistic approach. Similarly, the gut microbiome's growing recognition as a nutritional partner
+                        highlights the importance of prebiotic fibers and fermented foods in maintaining digestive and
+                        immune health.
+                    </p>
+
+                    <h2>Fluid Foundations</h2>
+                    <p>
+                        Water's role transcends basic hydration, acting as the medium for most biochemical reactions and
+                        a transportation network for nutrients and waste. Individual hydration needs vary dramatically
+                        based on activity level, climate, and physiology, but clear urine and mental clarity remain
+                        reliable indicators. Herbal teas and water-rich foods contribute to fluid intake, while
+                        understanding electrolyte balance becomes crucial during intense physical activity or illness.
+                    </p>
+
+                    <p>
+                        The modern challenge lies in navigating beverage options where sugary drinks and excessive
+                        caffeine often displace pure water. Developing taste for unsweetened fluids and recognizing
+                        thirst signals masked by chronic mild dehydration can significantly impact energy levels and
+                        cognitive performance. Remember that alcohol, while liquid, actually dehydrates and provides
+                        empty calories that disrupt metabolic processes.
+                    </p>
+
+                    <h2>Decoding Food Labels</h2>
+                    <p>
+                        Nutritional literacy in the modern food environment requires understanding labeling nuances.
+                        Serving sizes often reflect unrealistic consumption amounts, making percentage daily values
+                        misleading if not adjusted for actual portions. The ingredients list tells a crucial story -
+                        items appear in descending order by weight, so products listing sugar or refined oils early
+                        may deserve scrutiny.
+                    </p>
+
+                    <p>
+                        Claims like "natural" or "low-fat" often hide problematic substitutions, such as replacing
+                        fats with sugars in reduced-fat products. Learning to identify added sugars under various
+                        names (sucrose, dextrose, malt syrup) helps avoid blood sugar spikes. Similarly,
+                        recognizing whole grain imposters by checking for "whole" as the first ingredient in
+                        grain products ensures you receive the full nutritional benefits of intact grains.
+                    </p>
+
+                    <h2>Nutrition Through Life's Stages</h2>
+                    <p>
+                        Childhood nutrition focuses on supporting rapid growth and neurological development,
+                        requiring adequate protein, healthy fats like DHA for brain development, and iron-rich
+                        foods. Calcium and vitamin D intake during these formative years lay the foundation for
+                        lifelong bone health, while establishing vegetable consumption habits helps prevent
+                        picky eating patterns.
+                    </p>
+
+                    <p>
+                        Adult nutritional needs shift toward maintaining metabolic health and preventing
+                        chronic disease. Increased fiber needs support digestive health and cholesterol
+                        management, while antioxidant-rich foods combat oxidative stress from environmental
+                        and lifestyle factors. Later years bring increased protein requirements to combat
+                        muscle loss, along with heightened needs for B vitamins that support cognitive
+                        function and energy metabolism.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Personalized Nutrition Guidance</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask detailed nutrition questions (e.g., 'How can I improve gut health through diet?')"
+                            aria-label="Nutrition inquiry input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Customized Advice
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">For chronic conditions, consult a registered dietitian</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

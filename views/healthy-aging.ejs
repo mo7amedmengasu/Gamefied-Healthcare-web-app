@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Aging Guide</title>
+    <link rel="stylesheet" href="/healthy-aging.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Healthy Aging Center</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Science of Healthy Aging</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Aging well requires understanding biological processes and lifestyle factors. This comprehensive
+                        guide covers physical, cognitive, and emotional aspects of aging, evidence-based strategies for
+                        longevity, and maintaining quality of life through the decades.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Physical Health Maintenance</h2>
+                    <p>
+                        Preserve mobility and independence through proactive measures:
+                    <ul class="wellness-list">
+                        <li>Strength training (2-3x/week)</li>
+                        <li>Balance exercises</li>
+                        <li>Cardiovascular activity</li>
+                        <li>Flexibility routines</li>
+                    </ul>
+                    Regular health screenings and managing chronic conditions are crucial for successful aging.
+                    </p>
+
+                    <h2>Nutrition for Longevity</h2>
+                    <p>
+                        Optimal aging nutrition focuses on:
+                    <ul class="wellness-list">
+                        <li>Anti-inflammatory foods</li>
+                        <li>Adequate protein intake</li>
+                        <li>Micronutrient density</li>
+                        <li>Hydration management</li>
+                    </ul>
+                        Consider Mediterranean or MIND diets, with adjustments for changing metabolic needs.
+                    </p>
+
+                    <h2>Cognitive Preservation</h2>
+                    <p>
+                        Maintain brain health through:
+                    <ul class="wellness-list">
+                        <li>Continuous learning</li>
+                        <li>Social engagement</li>
+                        <li>Sleep hygiene</li>
+                        <li>Stress reduction techniques</li>
+                    </ul>
+                    Early detection of cognitive changes through regular mental health checkups.
+                    </p>
+
+                    <h2>Preventive Care</h2>
+                    <p>
+                        Essential screenings and interventions by age:
+                    <ul class="wellness-list">
+                        <li>Bone density scans</li>
+                        <li>Cancer screenings</li>
+                        <li>Vision/hearing tests</li>
+                        <li>Vaccination updates</li>
+                    </ul>
+                    Personalized prevention plans with healthcare providers optimize outcomes.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Aging Questions?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask aging-related questions (e.g., 'Best exercises for osteoporosis prevention?')"
+                            aria-label="Aging question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Aging Insights
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Consult your healthcare provider for personalized aging plans</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

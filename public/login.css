@@ -1,0 +1,266 @@
+:root {
+    --primary-color: #00b894;
+    --secondary-color: #0984e3;
+    --accent-color: #fdcb6e;
+    --dark-color: #2d3436;
+    --health-red: #ff7675;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, var(--primary-color), #55efc4);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Game Navigation */
+.game-nav {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(0, 184, 148, 0.1);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Game Background Elements */
+.game-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.1;
+    animation: float 15s infinite linear;
+}
+
+.heart {
+    color: var(--health-red);
+}
+
+.plus {
+    color: var(--secondary-color);
+}
+
+.pill {
+    color: var(--accent-color);
+}
+
+.star {
+    color: #ffeaa7;
+}
+
+.xp-track {
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    left: 10%;
+    top: 50%;
+    border-radius: 2px;
+}
+
+.xp-track::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--health-red);
+    border-radius: 50%;
+    top: -8px;
+    left: 30%;
+    animation: pulse 2s infinite;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 5rem auto;
+    position: relative;
+    z-index: 1;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.xp-bar {
+    background: #eee;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.xp-progress {
+    background: linear-gradient(90deg, var(--accent-color), #e17055);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.xp-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.8rem;
+    top: 2px;
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--dark-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(245, 245, 245, 0.8);
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.2);
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.register-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.register-link a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .game-nav {
+        padding: 1rem;
+    }
+
+    .nav-brand {
+        font-size: 1rem;
+    }
+
+    .login-container {
+        padding: 1.5rem;
+        margin: 3rem auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

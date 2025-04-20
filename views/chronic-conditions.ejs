@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Chronic Conditions</title>
+    <link rel="stylesheet" href="/chronic-conditions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Chronic Conditions Management</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Living Well with Chronic Health Conditions</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Chronic conditions require ongoing management but don't have to limit quality of life. With
+                        proper care,
+                        lifestyle adjustments, and medical support, individuals can thrive while managing long-term
+                        health
+                        challenges. This guide explores effective strategies for diabetes, hypertension, arthritis, and
+                        other
+                        persistent health conditions.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Understanding Chronic Illness</h2>
+                    <p>
+                        Chronic conditions are persistent health issues lasting a year or more, requiring continuous
+                        medical care.
+                        Unlike acute illnesses, these conditions develop gradually and often need lifelong management.
+                        Common
+                        examples include diabetes, heart disease, and chronic respiratory conditions. Early intervention
+                        and
+                        consistent care can significantly improve outcomes and prevent complications.
+                    </p>
+
+                    <h2>Daily Management Strategies</h2>
+                    <p>
+                        Successful management combines medical treatment with lifestyle modifications. Medication
+                        adherence,
+                        dietary planning, and monitored physical activity form the foundation of daily care. Tracking
+                        symptoms
+                        and vital signs helps identify patterns and prevent flare-ups. Modern technology like mobile
+                        apps and
+                        wearable devices can simplify monitoring and provide valuable data for healthcare providers.
+                    </p>
+
+                    <h2>Medication Management</h2>
+                    <p>
+                        Proper medication use is crucial for controlling chronic conditions. This involves understanding
+                        dosage
+                        schedules, potential side effects, and drug interactions. Pill organizers and reminder systems
+                        help
+                        maintain consistency. Regular medication reviews with healthcare providers ensure treatments
+                        remain
+                        effective and aligned with changing health needs.
+                    </p>
+
+                    <h2>Lifestyle Adaptations</h2>
+                    <p>
+                        Dietary modifications tailored to specific conditions can dramatically impact symptom
+                        management. For
+                        instance, low-sodium diets help control hypertension, while carbohydrate monitoring is essential
+                        for
+                        diabetes. Low-impact exercises like swimming or yoga maintain mobility without exacerbating
+                        symptoms.
+                        Stress reduction techniques prevent condition flare-ups triggered by emotional distress.
+                    </p>
+
+                    <h2>Working with Healthcare Teams</h2>
+                    <p>
+                        Effective chronic care requires collaboration between patients and multidisciplinary medical
+                        teams.
+                        Regular check-ups allow for treatment adjustments, while patient education programs empower
+                        individuals
+                        to take an active role in their care. Telemedicine options have made specialist consultations
+                        more
+                        accessible, particularly for those with mobility challenges.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Chronic Condition Support</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask about condition management (e.g., 'How to manage arthritis pain?')"
+                            aria-label="Chronic condition question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Management Tips
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Always consult your specialist for treatment adjustments</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

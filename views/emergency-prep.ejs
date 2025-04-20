@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Preparedness</title>
+    <link rel="stylesheet" href="/emergency-prep.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>Emergency Preparedness Center</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Essential Emergency Readiness</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Be ready for any crisis with proven preparedness strategies. This guide covers disaster planning,
+                        emergency kits, evacuation procedures, and life-saving first aid knowledge to protect your
+                        family in critical situations.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>Emergency Kit Essentials</h2>
+                    <p>
+                        Build a 72-hour survival kit:
+                    <ul class="emergency-list">
+                        <li>Water (1 gallon/person/day)</li>
+                        <li>Non-perishable food</li>
+                        <li>First aid supplies</li>
+                        <li>Emergency blanket</li>
+                        <li>Portable radio</li>
+                    </ul>
+                    </p>
+
+                    <h2>Disaster Preparedness</h2>
+                    <p>
+                        Specific threat planning:
+                    <ul class="emergency-list">
+                        <li>Earthquake: Secure heavy furniture</li>
+                        <li>Wildfire: Defensible space</li>
+                        <li>Flood: Elevation strategies</li>
+                        <li>Power outage: Alternative lighting</li>
+                    </ul>
+                    </p>
+
+                    <h2>Evacuation Planning</h2>
+                    <p>
+                        Create an effective exit strategy:
+                    <ul class="emergency-list">
+                        <li>Multiple escape routes</li>
+                        <li>Family meeting points</li>
+                        <li>Pet evacuation plans</li>
+                        <li>Important document storage</li>
+                    </ul>
+                    </p>
+
+                    <h2>Emergency Communication</h2>
+                    <p>
+                        Stay connected during crises:
+                    <ul class="emergency-list">
+                        <li>FEMA mobile app</li>
+                        <li>Hand-crank radio</li>
+                        <li>Out-of-area contact person</li>
+                        <li>Emergency alert systems</li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>Emergency Questions?</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask emergency prep questions (e.g., 'How to sanitize water in disasters?')"
+                            aria-label="Emergency question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Preparedness Info
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="safety-note">Always follow official emergency directives during crises</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

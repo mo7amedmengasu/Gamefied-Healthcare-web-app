@@ -1,0 +1,140 @@
+:root {
+    --nav-bg: #2c3e50;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+.lesson-nav {
+    background: var(--nav-bg);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.lesson-nav h1 {
+    color: var(--text-light);
+    font-size: 1.5rem;
+}
+
+.lesson-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.card-content h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: currentColor;
+    transition: width 0.5s ease;
+}
+
+/* Color Variations */
+.lesson-card.color-1::before {
+    background: #3498db;
+}
+
+.lesson-card.color-2::before {
+    background: #e74c3c;
+}
+
+.lesson-card.color-3::before {
+    background: #2ecc71;
+}
+
+.lesson-card.color-4::before {
+    background: #9b59b6;
+}
+
+.lesson-card.color-5::before {
+    background: #f1c40f;
+}
+
+.lesson-card.color-6::before {
+    background: #e67e22;
+}
+
+.lesson-card.color-7::before {
+    background: #1abc9c;
+}
+
+.lesson-card.color-8::before {
+    background: #e84393;
+}
+
+.lesson-card.color-9::before {
+    background: #00cec9;
+}
+
+.lesson-card.color-10::before {
+    background: #6c5ce7;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .lesson-container {
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-nav {
+        padding: 1rem;
+    }
+}

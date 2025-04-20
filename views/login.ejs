@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthQuest - Login</title>
+    <link rel="stylesheet" href="/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Game Navigation -->
+    <nav class="game-nav">
+        <div class="nav-brand">
+            🏥 HealthQuest
+        </div>
+        <div class="nav-links">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Animated Background Elements -->
+    <div class="game-background">
+        <div class="particle heart" style="left: 10%">❤️</div>
+        <div class="particle plus" style="left: 30%">➕</div>
+        <div class="particle pill" style="left: 50%">💊</div>
+        <div class="particle star" style="left: 70%">⭐</div>
+        <div class="xp-track"></div>
+    </div>
+
+    <!-- Main Login Container -->
+    <div class="login-container">
+        <div class="game-header">
+            <div class="xp-bar">
+                <div class="xp-progress" style="width: 65%"></div>
+                <span class="xp-text">Level 5 Medical Hero</span>
+            </div>
+            <h1>🔑 Access Your Health Journey</h1>
+        </div>
+
+        <form action="/dashboard" method="post">
+            <div class="form-group">
+                <label for="email">🏷️ Hero Identification</label>
+                <input type="email" id="email" name="email" placeholder="Enter your healing scroll..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">🗝️ Secret Potion Code</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit">⚔️ Begin Healing Adventure</button>
+
+            <div class="register-link">
+                <p>New to HealthQuest? <a href="/register">Join the Guild →</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

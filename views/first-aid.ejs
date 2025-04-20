@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential First Aid Skills</title>
+    <link rel="stylesheet" href="/first-aid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="lesson-nav">
+        <a href="/dashboard/learn" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Return to lessons
+        </a>
+        <h1>First Aid Essentials</h1>
+    </nav>
+
+    <div class="knowledge-container">
+        <article class="research-paper">
+            <h1>Life-Saving First Aid Techniques</h1>
+
+            <div class="article-content">
+                <section class="intro-section">
+                    <p class="lead-paragraph">
+                        Immediate first aid response can mean the difference between life and death in emergencies.
+                        This guide covers critical interventions for common emergencies, equipping you with knowledge
+                        to act confidently until professional help arrives. Remember: Always prioritize personal
+                        safety and call emergency services first.
+                    </p>
+                </section>
+
+                <section class="main-content">
+                    <h2>CPR Basics</h2>
+                    <p>
+                        Cardiopulmonary Resuscitation (CPR) maintains blood flow when someone's heart stops.
+                        For adults: Position hands on breastbone, push hard and fast (100-120 compressions/minute).
+                        For infants: Use two fingers with gentle compressions. Combine with rescue breaths if trained.
+                        Continue until help arrives or the person revives.
+                    </p>
+
+                    <h2>Burn Treatment</h2>
+                    <p>
+                        For thermal burns: Cool with running water for 10-20 minutes. Never apply ice.
+                        Cover with sterile non-stick dressing. For chemical burns: Flush with water for 20+ minutes.
+                        Remove contaminated clothing carefully. Seek medical help for severe burns or facial injuries.
+                    </p>
+
+                    <h2>Choking Response</h2>
+                    <p>
+                        For conscious adults: Perform abdominal thrusts (Heimlich maneuver) until obstruction clears.
+                        For infants: Alternate back blows and chest thrusts. If person becomes unconscious, begin CPR.
+                        Never perform blind finger sweeps which might push obstruction deeper.
+                    </p>
+
+                    <h2>Bleeding Control</h2>
+                    <p>
+                        Apply direct pressure with clean cloth. Elevate injured area above heart level if possible.
+                        Use pressure points for severe bleeding. Tourniquets are last resort for limb injuries -
+                        note application time. Watch for shock signs: pale skin, rapid pulse, confusion.
+                    </p>
+
+                    <h2>Fracture Management</h2>
+                    <p>
+                        Immobilize injured area using splints or rigid materials. Support joints above and below injury.
+                        For open fractures: Cover wound with sterile dressing without pushing on protruding bone.
+                        Apply cold packs to reduce swelling. Seek immediate medical attention for proper alignment.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <section class="health-interaction">
+            <h2>First Aid Assistance</h2>
+            <div class="query-container">
+                <form action="/generate" method="POST">
+                    <div class="input-group">
+                        <textarea name="question" rows="4"
+                            placeholder="Ask emergency care questions (e.g., 'How to handle snake bites?')"
+                            aria-label="First aid question input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Get Emergency Guidance
+                    </button>
+                </form>
+
+                <% if (responseText) { %>
+                    <div class="response-card">
+                        <div class="response-content">
+                            <%= responseText %>
+                                <p class="medical-note">Always seek professional medical help after first aid</p>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
