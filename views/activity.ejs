@@ -4,66 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Activity Dashboard</title>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/activity.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/activity.css">
 </head>
 
 <body>
-    <nav>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/dashboard" class="nav-back">← Back</a>
+            <div class="nav-brand">User Activity</div>
+            <!-- <div class="nav-links">
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div> -->
+        </div>
     </nav>
 
-    <div class="container">
-        <div class="left-section">
-            <button class="back-button" onclick="window.history.back()">← Back</button>
-            <h2>Activity Advice</h2>
-            <div class="advice-box">
-                <p>
-                    <%= advice %>
-                </p>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="chart-container">
+                <h2 class="section-title">Activity Progress</h2>
+                <div class="chart-wrapper">
+                    <canvas id="progressChart"></canvas>
+                </div>
             </div>
-        </div>
 
-        <div class="right-section">
-            <h2>Points Over Time</h2>
-            <canvas id="activityChart"></canvas>
+            <div class="advice-container">
+                <h2 class="section-title">Personalized Advice</h2>
+                <div class="advice-card">
+                    <p class="advice-text">Based on your recent activity, we recommend increasing your daily practice
+                        time by 20% to reach your goals faster. Consistency is key to success!</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        const ctx = document.getElementById('activityChart').getContext('2d');
+        // Line chart configuration
+        const ctx = document.getElementById('progressChart').getContext('2d');
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: <%= JSON.stringify(timeLabels) %>,
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
                 datasets: [{
                     label: 'User Points',
-                    data: <%= JSON.stringify(userPoints) %>,
-                    borderColor: '#6366f1',
+                    data: [65, 59, 80, 81, 56, 55],
+                    borderColor: '#4a90e2',
                     tension: 0.4,
-                    fill: false
+                    fill: false,
+                    borderWidth: 3
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
+                    },
+                    title: {
+                        display: false
                     }
                 },
                 scales: {
                     y: {
                         beginAtZero: true,
                         grid: {
-                            color: '#e5e7eb'
+                            color: '#f0f0f0'
                         }
                     },
                     x: {
                         grid: {
-                            display: false
+                            color: '#f0f0f0'
                         }
                     }
                 }

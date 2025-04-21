@@ -276,22 +276,27 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('login.ejs');
 });
-// app.get('/', (req, res) => {
-//     // Sample data - replace with your actual data
-//     const activityData = {
-//         advice: "Great job maintaining consistent activity! Try adding 30 minutes of exercise 5 days a week.",
-//         timeLabels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-//         userPoints: [45, 52, 60, 48, 65, 70, 55]
-//     };
-
-//     res.render('activity.ejs', activityData);
-// });
-
+app.get('/contact', (req, res) => {
+    res.render('contact.ejs');
+});
+app.get('/about', (req, res) => {
+    res.render('about.ejs');
+});
+app.get('/register', (req, res) => {
+    res.render('register.ejs');
+});
+app.post('/', (req, res) => {
+    res.render('login.ejs');
+});
 app.post('/dashboard', (req, res) => {
     res.render('dashboard.ejs', { responseText: null });
 });
+
 app.get('/dashboard', (req, res) => {
     res.render('dashboard.ejs', { responseText: null });
+});
+app.get('/dashboard/activity', (req, res) => {
+    res.render('activity.ejs');
 });
 app.get('/dashboard/learn', (req, res) => {
     res.render('lessons.ejs');
